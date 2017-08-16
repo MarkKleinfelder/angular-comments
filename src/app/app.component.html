@@ -1,4 +1,10 @@
 <h1>Comments</h1>
 <ul>
-    <li *ngFor="let comment of comments">{{comment}}</li>
+    <li *ngFor="let comment of comments; let i = index" >{{comment.text}}  by: {{comment.author}} <button type="delete" (click)="deleteComment(i)">Delete!</button>
+    <button type='update' (click)="updateComment(i)">update</button>
+
+    </li>
 </ul>
+<input type="text" [(ngModel)]="commentText" placeholder="comment">
+<input type="text" [(ngModel)]="authorText" placeholder='author'>
+<button type='submit' (click)= "submitComment()" >Submit</button>
