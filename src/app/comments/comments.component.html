@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let comment of comments; let i = index" >{{comment.text}}  by: {{comment.author}} <button type="delete" (click)="deleteComment(i)">Delete!</button>
+    <button type='update' (click)="updateComment(i)">update</button>
+
+    </li>
+</ul>
