@@ -11,41 +11,41 @@ import { NgModule } from '@angular/core';
 })
 export class AppComponent {
 
-// comments = [];
+comments = [];
 
 
-// commentText = '';
-// authorText = '';
-// comment = {
-//   text:'',
-//   author: ''
-// }
+commentText = '';
+authorText = '';
+comment = {
+  text:'',
+  author: ''
+}
 
-//   submitComment(){
-//     console.log(this.authorText);
-//     console.log(this.commentText);
-//     this.comment = {
-//       text: this.commentText,
-//       author: this.authorText
-//     }
+  submitComment(){
+    console.log(this.authorText);
+    console.log(this.commentText);
+    this.comment = {
+      text: this.commentText,
+      author: this.authorText
+    }
 
-//     console.log(this.comment)
-//     this.comments.push(this.comment)
-//   }
+    console.log(this.comment)
+    this.comments.push(this.comment)
+  }
 
 
-//   deleteComment(i){
-//     console.log('delete function hit')
-//     this.comments.splice(i, 1)
-// }
+  deleteComment(i){
+    console.log('delete function hit')
+    this.comments.splice(i, 1)
+}
 
-//   updateComment(i){
-//     console.log('update function hit!');
-//     this.comment = {
-//       text:this.commentText,
-//       author:this.authorText
-//     }
-//     this.comments.splice(i,1,this.comment)
+  updateComment(i){
+    console.log('update function hit!');
+    this.comment = {
+      text:this.commentText,
+      author:this.authorText
+    }
+    this.comments.splice(i,1,this.comment)
    
-//   }
-// };
+  }
+};
