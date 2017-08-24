@@ -14,7 +14,7 @@ import { NgModule } from '@angular/core';
 
 export class AppComponent {
 
-title="Angular Comments! GET SOME";
+title="Angular Comments!";
 
 
 

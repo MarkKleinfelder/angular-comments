@@ -1,0 +1,33 @@
+.by{
+	margin-left: 10px;
+	font-weight: bolder;
+}
+
+h1{
+	margin:auto;
+	text-align: center;
+}
+
+li{
+	margin-top: 1em;
+	font-size: 20px;
+	
+}
+
+.inputs{
+	margin-top:2em;
+	text-align: center;
+}
+
+.list{
+	margin-top: 2em;
+	text-align: center;
+	list-style: none;
+}
+
+button{
+	margin-left:1em;
+	font-size: 15px;
+	font-weight: lighter;
+}
+

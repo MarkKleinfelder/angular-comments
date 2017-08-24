@@ -1,0 +1,19 @@
+.inputs{
+	margin-top:2em;
+	text-align: center;
+}
+
+.list{
+	margin-top: 2em;
+	text-align: center;
+	list-style: none;
+}
+
+h1{
+	margin:auto;
+	text-align: center;
+}
+
+li{
+	margin-top: 1em;
+}

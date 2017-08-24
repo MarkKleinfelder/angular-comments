@@ -1,11 +1,32 @@
-<h1>Comments</h1>
-<ul>
-    <li *ngFor="let comment of comments; let i = index" >{{comment.text}}  by: {{comment.author}} <button type="delete" (click)="deleteComment(i)">Delete!</button>
-    <button type='update' (click)="updateComment(i)">update</button>
+<div class='container'>
 
-    </li>
-</ul>
+<div class="container inputs">
+  <div class="input-field col s6">
+      <i class="material-icons prefix">create</i>
+      <input [(ngModel)]="commentText" id="icon_prefix" type="text" class="validate">
+      <label for="icon_prefix">comment</label>
+  </div>
+  <div class="input-field col s6">
+      <i class="material-icons prefix">face</i>
+      <input id="icon_telephone" [(ngModel)]="authorText" type="tel" class="validate">
+      <label for="icon_telephone">author</label>
+  </div>
 
-<input type="text" [(ngModel)]="commentText" placeholder="comment">
-<input type="text" [(ngModel)]="authorText" placeholder='author'>
-<button type='submit' (click)= "submitComment()" >Submit</button>
+
+<!--   <input type="text" [(ngModel)]="commentText" placeholder="comment">
+  <input type="text" [(ngModel)]="authorText" placeholder='author'> -->
+  <button type='submit' class="btn waves-effect waves-green" (click)= "submitComment()" >Submit <i class="material-icons right">send</i></button>
+</div>
+
+
+  <div class='container'>
+	<ul class="list">
+        <li *ngFor="let comment of comments; let i = index" class="flow-text" >{{comment.text}} <span class='by'>by:</span> {{comment.author}} <br>
+        <button type="delete" class='waves-effect waves-light btn-large red' (click)="deleteComment(i)">DELETE</button> 
+        <button type='update' class='waves-effect waves-light btn-large green' (click)="updateComment(i)">UPDATE</button>
+  	  </li>
+    </ul>
+  </div>
+</div>
+
+
